@@ -40,7 +40,7 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: 40px;
 }
 
@@ -51,26 +51,63 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  /*  */
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
-    display: block;
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 32px;
+  display: block;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 32px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  /* animation-delay: 3s; */
+  animation-timing-function: ease-in;
 }
 
 .heading-primary-sub {
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 17.4px;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+
+  animation: moveInRight 1s ease-in;
 }
 
-.text-box{
-    position: absolute;
-    /* Center box in center */
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.text-box {
+  position: absolute;
+  /* Center box in center */
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
