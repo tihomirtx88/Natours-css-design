@@ -21,6 +21,7 @@ body {
   padding: 30px;
 }
 
+/* Header */
 .header {
   height: 95vh;
   background-image: linear-gradient(
@@ -34,4 +35,42 @@ body {
   /* Cutting bacground image */
   /* clip-path: polygon(x y, x y); */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 32px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+}
+
+.text-box{
+    position: absolute;
+    /* Center box in center */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
