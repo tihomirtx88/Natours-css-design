@@ -4,11 +4,13 @@
   "description": "Modern and responsive design buidling with css, scss, flex and grid.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "live-server --port=8080 --no-browser"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "live-server": "^1.2.2",
     "node-sass": "^9.0.0"
   }
 }
