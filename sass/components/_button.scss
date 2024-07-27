@@ -29,11 +29,11 @@
   }
 
   &--white {
-    background-color: $color-white;
+    background-color: $color-light;
     color: $color-grey-dark;
 
     &::after {
-      background-color: $color-white;
+      background-color: $color-light;
     }
   }
 
@@ -72,7 +72,7 @@
 
   &:hover {
     background: $color-primary;
-    color: $color-white;
+    color: $color-light;
     box-shadow: 0 1rem 2rem rgba($color-black, .15);
     transform: translateY(-2px);
   }
