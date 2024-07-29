@@ -245,15 +245,14 @@
         <div class="u-center-text u-margin-top-huge">
           <a href="#" class="btn btn--green">Discover All Tours</a>
         </div>
-
       </section>
 
       <section class="section-stories">
         <div class="bg-video">
-           <video class="bg-video__content" autoplay loop muted>
-              <source src="img/video.mp4" type="video/mp4">
-              <source src="img/video.webm" type="video/webm">
-           </video>
+          <video class="bg-video__content" autoplay loop muted>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+          </video>
         </div>
 
         <div class="u-center-text u-margin-bottom-big">
@@ -263,13 +262,21 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="./img/nat-8.jpg" alt="Person on a tour" class="story__img">
+              <img
+                src="./img/nat-8.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
               <figcapiton class="story__caption">Mary Smith</figcapiton>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertirary u-margin-bottom-small">I had the best week ever with my family</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                eos reprehenderit soluta</p>
+              <h3 class="heading-tertirary u-margin-bottom-small">
+                I had the best week ever with my family
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                eos reprehenderit soluta
+              </p>
             </div>
           </div>
         </div>
@@ -277,13 +284,21 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="./img/nat-9.jpg" alt="Person on a tour" class="story__img">
+              <img
+                src="./img/nat-9.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
               <figcapiton class="story__caption">Andreas Smith</figcapiton>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertirary u-margin-bottom-small">WOW! My life is absoliutly diferent now</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                eos reprehenderit soluta</p>
+              <h3 class="heading-tertirary u-margin-bottom-small">
+                WOW! My life is absoliutly diferent now
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                eos reprehenderit soluta
+              </p>
             </div>
           </div>
         </div>
@@ -302,13 +317,56 @@
                   <h2 class="heading-secondary">Start Booking Now</h2>
                 </div>
                 <div class="form__group">
-                  <input type="text" class="form__input" placeholder="Full Name" required id="name">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    required
+                    id="name"
+                  />
                   <label for="name" class="form__label">Full name</label>
                 </div>
 
                 <div class="form__group">
-                  <input type="email" class="form__input" placeholder="Email Address" required id="email">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email Address"
+                    required
+                    id="email"
+                  />
                   <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      Small tour group
+                      <span class="form__radio-button"></span>
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      Large tour group
+                      <span class="form__radio-button"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form__group--button">
+                  <button class="btn btn--green">Next step &rarr;</button>
                 </div>
               </form>
             </div>
