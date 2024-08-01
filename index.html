@@ -162,7 +162,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -193,7 +193,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now</a>
+                  <a href="#popup" class="btn btn--white">Book Now</a>
                 </div>
               </div>
             </div>
@@ -224,7 +224,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now</a>
+                  <a href="#popup" class="btn btn--white">Book Now</a>
                 </div>
               </div>
             </div>
@@ -255,7 +255,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$876</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now</a>
+                  <a href="#popup" class="btn btn--white">Book Now</a>
                 </div>
               </div>
             </div>
@@ -433,13 +433,15 @@
       </div>
     </footer>
 
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__content">
          <div class="popup__left">
           <img src="./img/nat-8.jpg" alt="Tour photo" class="popup__img">
           <img src="./img/nat-9.jpg" alt="Tour photo" class="popup__img">
          </div>
          <div class="popup__right">
+          <!-- For can be section-tours target affter close  -->
+          <a href="#section-tours" class="popup__close">&times;</a>
            <h2 class="heading-secondary u-margin-bottom-medium">start booking now</h2>
            <h3 class="heading-tertirary u-margin-bottom-small">Importnant &ndash; Please read these terms before booking</h3>
            <p class="popup__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
