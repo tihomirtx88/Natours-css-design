@@ -5,6 +5,10 @@
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+    @include respond(tab-port) {
+      padding: 2rem;
+    }
     transition: all .3s;
 
     &__icon{
@@ -19,6 +23,10 @@
       // Clip the background color only where text is it
       -webkit-background-clip: text;
       color: transparent;
+
+      @include respond(tab-port) {
+        margin-bottom: 0;
+      }
     }
 
     &__text{
